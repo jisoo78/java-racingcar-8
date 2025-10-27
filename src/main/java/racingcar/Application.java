@@ -1,7 +1,5 @@
 package racingcar;
 
-import camp.nextstep.edu.missionutils.Console;
-
 import java.util.List;
 
 public class Application {
@@ -10,10 +8,6 @@ public class Application {
         List<String> carNames = InputCarName.getCarNames();
         int tryNumber = InputCarName.getTryCount();
 
-        System.out.println("carName: " + carNames);
-        System.out.println("tryNumber:" + tryNumber);
-
-        System.out.println(RandomMoveNumber.carMove());
-
+        RacingGame.racingGame(carNames, tryNumber);
     }
 }
